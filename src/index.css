@@ -1,0 +1,60 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+	font-size: 20px;
+	scroll-behavior: smooth;
+}
+
+@layer base {
+	h1 {
+		@apply font-headers text-5xl max-md:text-4xl;
+	}
+
+	h2 {
+		@apply text-3xl max-md:text-3xl;
+	}
+
+	h3 {
+		@apply text-2xl max-md:text-2xl;
+	}
+
+	hr {
+		@apply pb-4 w-20 mx-auto border-black;
+	}
+
+	p {
+		@apply max-md:text-sm
+	}
+}
+
+@layer components {
+	.navbuttons {
+		@apply py-2 px-2 mx-2 rounded-md text-black  hover:text-custom-pink transition-colors duration-200 hover:bg-gray-100;
+	}
+
+	.aboutcards {
+		@apply w-[400px] p-4 mb-4 shadow-black shadow-2xl mx-4 bg-pink-400;
+	}
+
+	.aboutHead {
+		@apply py-6 text-center;
+	}
+
+	.aboutDesc {
+		@apply text-center sm:text-sm;
+	}
+
+	.pricecards {
+		@apply w-[500px] p-4 mb-4 shadow-black shadow-2xl mx-4 bg-pink-400 h-fit;
+	}
+
+	.pricelist {
+		@apply border-b border-b-gray-300 py-3;
+	}
+
+	.socials {
+		@apply p-1 mx-4 bg-white rounded-full w-12;
+	}
+}
