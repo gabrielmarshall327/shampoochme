@@ -27,6 +27,10 @@
 	p {
 		@apply max-md:text-sm
 	}
+
+	span{
+		@apply max-md:text-sm
+	}
 }
 
 @layer components {
