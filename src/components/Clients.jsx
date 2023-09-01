@@ -25,7 +25,7 @@ function Clients() {
 					<p className="aboutDesc">
 						When you live a busy life, it is hard to consistently provide the
 						attention and care that your pets can demand. Let Shampooch Me take
-						care of it for you. Letting us pamper your fur baby to maintain
+						care of it for you, letting us pamper your fur baby to maintain
 						their physical health and appearance. So when you see the yellow and
 						pink van passing by, give us a call!
 					</p>

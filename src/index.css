@@ -55,7 +55,7 @@
 	}
 
 	.pricelist {
-		@apply border-b border-b-gray-300 py-3;
+		@apply border-b border-b-gray-300 py-2;
 	}
 
 	.socials {

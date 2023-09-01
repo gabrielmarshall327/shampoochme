@@ -1,5 +1,5 @@
 import React from "react";
-import AboutDog from "../assets/Dog1.webp";
+import AboutDog from "../assets/aboutusbg.jpg";
 
 function About() {
   const today = new Date().getDay();
@@ -17,7 +17,7 @@ function About() {
                 Monday - Friday
               </p>{" "}
               <p className={today >= 1 && today <= 5 ? "font-bold" : ""}>
-                8am - 6pm
+                8am - 5pm
               </p>
               <p className={today == 6 ? "font-bold" : ""}>Saturday</p>{" "}
               <p className={today == 6 ? "font-bold" : ""}>9am - 11am</p>
@@ -26,7 +26,7 @@ function About() {
             </div>
             <h3 className="py-8 pt-16 text-center">Forms of Payment</h3>
             <p className="text-center">
-              We accept cash, checks or credit cards
+              We accept cash, checks or credit/debit cards
             </p>
             <h3 className="py-8 pt-16 text-center">Cancellations</h3>
             <p className="text-center pb-8">

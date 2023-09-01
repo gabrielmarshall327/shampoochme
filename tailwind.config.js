@@ -11,7 +11,7 @@ export default {
 			},
 			backgroundImage: {
 				herobg: "url('/src/assets/herobg.png')",
-				aboutdog: "url('/src/assets/dog1.webp')",
+				aboutdog: "url('/src/assets/aboutusbg.jpg')",
 			},
 		},
 	},
