@@ -17,7 +17,7 @@ function Pictures() {
     sliderDog4,
     sliderDog5,
     sliderDog6,
-    sliderDog7
+    sliderDog7,
   ];
 
   const [currIndex, setCurrIndex] = useState(0);
@@ -37,12 +37,15 @@ function Pictures() {
   return (
     <div className=" bg-white" id="pictures">
       <div className=" py-12">
-        <h1 className=" text-center pb-8 px-2">Some of Shampooch Me's Clients</h1>
+        <h1 className=" text-center pb-8 px-2">
+          Some of Shampooch Me's Clients
+        </h1>
         <hr />
-        <div className="relative max-w-md flex mx-auto justify-center p-4 max-md:max-w-sm">
-          <div className="">
-            <img src={slides[currIndex]} alt="Dogs" className=" rounded-2xl " />
-          </div>
+        <div className="relative max-w-md h-[700px] flex mx-auto justify-center p-4 max-md:max-w-sm max-sm:max-w-xs max-sm:h-[400px]">
+          <div
+            style={{ backgroundImage: `url(${slides[currIndex]})` }}
+            className="w-full h-full rounded-2xl bg-center bg-cover bg-no-repeat duration-500 "
+          ></div>
           <div className=" absolute inset-0 flex items-center justify-between max-w-2xl mx-auto p-4">
             <div className=" cursor-pointer rounded-full bg-black/50 text-white p-1">
               <BsChevronCompactLeft size={30} onClick={prevSlide} />

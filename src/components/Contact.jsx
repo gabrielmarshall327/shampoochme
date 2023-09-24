@@ -1,6 +1,7 @@
-import React from "react";
+import React, { useRef } from "react";
 import { useFormik } from "formik";
 import * as Yup from "yup";
+import emailjs from "@emailjs/browser";
 
 function Contact() {
   //Formik Logic
@@ -35,6 +36,17 @@ function Contact() {
     //Submit Form
     onSubmit: (values) => {
       console.log(values);
+      emailjs
+        .send(
+          import.meta.env.VITE_SERVICE_ID,
+          import.meta.env.VITE_TEMPLATE_ID,
+          values,
+          import.meta.env.VITE_PUBLIC_KEY
+        )
+        .then(() => {
+          console.log("Email Sent");
+          alert("Message Successfully Sent!");
+        });
     },
   });
 
@@ -51,6 +63,7 @@ function Contact() {
           onSubmit={formik.handleSubmit}
           className=" flex flex-wrap"
           method="post"
+          id="contactForm"
         >
           <label className="flex flex-col mb-2 w-[48%] mr-auto max-md:w-full">
             <span

@@ -39,8 +39,7 @@ function Price() {
               <li className="pricelist">Clean Sani Area, Eyes, & Ears</li>
               <li className="pricelist">Spray Conditioner</li>
               <li className="pricelist">Teeth Brushed</li>
-              <li className="pricelist">Breed Specfic Cut</li>
-              <li className="pricelist border-b-0">Spray Conditioner</li>
+              <li className="pricelist border-b-0">Breed Specfic Cut</li>
             </ul>
           </div>
         </div>
